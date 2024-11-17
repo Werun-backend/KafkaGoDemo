@@ -16,6 +16,7 @@ var (
 	topic = "user_click"
 )
 
+// 消费消息
 func ReadMessages(ctx context.Context, wg *sync.WaitGroup) {
 	defer wg.Done()
 
@@ -53,6 +54,7 @@ func ReadMessages(ctx context.Context, wg *sync.WaitGroup) {
 	}
 }
 
+// 监听信号
 func ListenSignal(ctx context.Context, wg *sync.WaitGroup) {
 	defer wg.Done()
 
